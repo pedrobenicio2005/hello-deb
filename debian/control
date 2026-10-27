@@ -1,0 +1,11 @@
+Source: hello-deb
+Section: utils
+Priority: optional
+Maintainer: PedroBenicio <pedrobenicio733@gmail.com>
+Build-Depends: debhelper-compat (= 13), gcc
+Standards-Version: 4.5.1
+
+Package: hello-deb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Programa que exibe mensagem engraçada.

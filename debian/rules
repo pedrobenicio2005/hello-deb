@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_build:
+	$(MAKE) -C src
+
+override_dh_auto_install:
+	$(MAKE) -C src install DESTDIR=$$(pwd)/debian/hello-deb
